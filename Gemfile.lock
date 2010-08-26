@@ -93,7 +93,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  annotate-models
+  annotate-models (= 1.0.4)
   factory_girl_rails (= 1.0)
   gravatar_image_tag (= 0.1.0)
   rails (= 3.0.0.rc)
