@@ -39,6 +39,7 @@ GEM
     factory_girl_rails (1.0)
       factory_girl (~> 1.3)
       rails (>= 3.0.0.beta4)
+    faker (0.3.1)
     gravatar_image_tag (0.1.0)
     i18n (0.4.1)
     mail (2.2.5)
@@ -88,6 +89,7 @@ GEM
       nokogiri (>= 1.2.0)
       rack (>= 1.0)
       rack-test (>= 0.5.3)
+    will_paginate (3.0.pre)
 
 PLATFORMS
   ruby
@@ -95,9 +97,11 @@ PLATFORMS
 DEPENDENCIES
   annotate-models (= 1.0.4)
   factory_girl_rails (= 1.0)
+  faker (= 0.3.1)
   gravatar_image_tag (= 0.1.0)
   rails (= 3.0.0.rc)
   rspec (= 2.0.0.beta.18)
   rspec-rails (= 2.0.0.beta.18)
   spork (= 0.8.4)
   sqlite3-ruby (= 1.2.5)
+  will_paginate (= 3.0.pre)
