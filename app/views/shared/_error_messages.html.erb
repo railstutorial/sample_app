@@ -1,12 +1,13 @@
-<% if @user.errors.any? %>
+<% if object.errors.any? %>
   <div id="error_explanation">
     <h2>
-      <%= pluralize(@user.errors.count, "error") %>
-      prohibited this user from being saved:
+      <%= pluralize(object.errors.count, "error") %>
+      prohibited this <%= object.class.to_s.underscore.humanize.downcase %>
+      from being saved:
     </h2>
     <p>There were problems with the following fields:</p>
     <ul>
-    <% @user.errors.full_messages.each do |message| %>
+    <% object.errors.full_messages.each do |message| %>
       <li><%= message %></li>
     <% end %>
     </ul>
