@@ -37,7 +37,7 @@ describe "Users" do
   end
 
   describe "signin" do
-
+    
     describe "failure" do
       it "should not sign a user in" do
         visit signin_path
