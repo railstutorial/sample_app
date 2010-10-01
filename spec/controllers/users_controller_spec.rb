@@ -233,11 +233,10 @@ describe UsersController do
       
       it "should change the user's attributes" do
         put :update, :id => @user, :user => @attr
-        user = assigns(:user)
         @user.reload
-        @user.name.should == user.name
-        @user.email.should == user.email
-        @user.encrypted_password.should == user.encrypted_password
+        @user.name.should  == @attr[:name]
+        @user.email.should == @attr[:email]
+        @user.encrypted_password.should == assigns(:user).encrypted_password
       end
       
       it "should have a flash message" do
