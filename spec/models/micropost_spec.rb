@@ -60,18 +60,15 @@ describe Micropost do
     end
     
     it "should include the followed user's microposts" do
-      Micropost.from_users_followed_by(@user).
-        should include(@other_post)
+      Micropost.from_users_followed_by(@user).should include(@other_post)
     end
     
     it "should include the user's own microposts" do
-      Micropost.from_users_followed_by(@user).
-        should include(@user_post)
+      Micropost.from_users_followed_by(@user).should include(@user_post)
     end
     
     it "should not include an unfollowed user's microposts" do
-      Micropost.from_users_followed_by(@user).
-        should_not include(@third_post)
+      Micropost.from_users_followed_by(@user).should_not include(@third_post)
     end
   end
 end
