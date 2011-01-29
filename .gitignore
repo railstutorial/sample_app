@@ -2,10 +2,8 @@
 db/*.sqlite3*
 log/*.log
 *.log
-tmp/**/*
-tmp/*
-doc/api
-doc/app
+/tmp/
+doc/
 *.swp
 *~
 .DS_Store
