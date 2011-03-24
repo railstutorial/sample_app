@@ -1,0 +1,20 @@
+%table{ :summary => "Information about following/followers" }
+  %tr
+    %td.mail
+      %h1= @title
+      - if @users.any?
+        %ul.users
+          = render @users
+    %td.sidebar.round
+      %strong Name
+      = @user.name
+      %br
+      %strong URL
+      = link_to user_path(@user), @user
+      %br
+      %strong Microposts
+      = @user.microposts.count
+      = render 'shared/stats'
+      - if @users.any?
+        - @users.each do |user|
+          = link_to gravatar_for(user, :size => 30), user

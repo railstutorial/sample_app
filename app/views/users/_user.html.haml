@@ -1,0 +1,8 @@
+%li
+  = gravatar_for user, :size => 30
+  = link_to user.name, user
+  - if current_user.admin?
+    |
+    - title = "Delete #{user.name}"
+    - opts = { :method => :delete, :confirm => "You sure?", :title => title }
+    = link_to "delete", user, opts

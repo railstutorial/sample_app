@@ -1,0 +1,4 @@
+- relationship = current_user.relationships.build(:followed_id => @user.id)
+= form_for(relationship, :remote => true) do |f|
+  = f.hidden_field :followed_id
+  .actions= f.submit "Follow"
