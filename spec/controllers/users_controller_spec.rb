@@ -141,6 +141,65 @@ describe UsersController do
     end
   end
 
+  describe "GET 'show.rss'" do
+    before(:each) do
+      @user = Factory(:user)
+      @mp1  = Factory(:micropost, :user => @user, :content => "Foo bar")
+      @mp2  = Factory(:micropost, :user => @user, :content => "Baz quux")
+    end
+    
+    it "should be successful" do
+      do_get
+      response.should be_success
+    end
+    
+    it "should not paginate microposts" do
+      do_get
+      microposts = assigns(:microposts)
+      microposts.class.should == Array
+    end
+    
+    it "should have the right title" do
+      do_get
+      content = "#{@user.name.possessive} Microposts"
+      response.should have_selector('title', :content => content)
+    end
+    
+    it "should have the right description" do
+      do_get
+      response.should have_selector('description',
+                                    :content => "User Microposts")
+    end
+
+    it "should have the micropost title" do
+      do_get
+      response.should have_selector('title', :content => 'micropost 1')
+      response.should have_selector('title', :content => 'micropost 2')
+    end
+
+    it "should have descriptions for the microposts" do
+      do_get
+      response.should have_selector('description', :content => @mp1.content)
+      response.should have_selector('description', :content => @mp2.content)
+    end
+
+    # Apparently RSpec does not handle uppercase correctly in selectors (i.e.,
+    # 'pubDate'), so this test fails unless I downcase 'pubDate' to lowercase
+    # 'pubdate'.
+
+    it "should have micropost publication date" do
+      do_get
+      response.should have_selector('pubDate'.downcase,
+                                    :content => @mp1.created_at.to_s(:rfc822))
+      response.should have_selector('pubDate'.downcase,
+                                    :content => @mp2.created_at.to_s(:rfc822))
+    end
+
+    def do_get
+      get :show, :id => @user, :format => :rss
+    end
+  end
+
   describe "GET 'new'" do
   
     it "should be successful" do

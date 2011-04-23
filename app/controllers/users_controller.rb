@@ -10,8 +10,15 @@ class UsersController < ApplicationController
   
   def show
     @user = User.find(params[:id])
-    @microposts = @user.microposts.paginate(:page => params[:page])
     @title = @user.name
+    respond_to do |format|
+      format.html do
+        @microposts = @user.microposts.paginate(:page => params[:page])
+      end
+      format.rss do
+        @microposts = @user.microposts
+      end
+    end
   end
 
   def following
