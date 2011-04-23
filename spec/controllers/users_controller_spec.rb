@@ -127,6 +127,11 @@ describe UsersController do
                                     :content => @user.microposts.count.to_s)
     end
     
+    it "should have a link to the RSS feed" do
+      get :show, :id => @user
+      response.should have_selector('a', :href => user_path(@user, :rss))
+    end
+    
     describe "when signed in as another user" do
       it "should be successful" do
         test_sign_in(Factory(:user, :email => Factory.next(:email)))

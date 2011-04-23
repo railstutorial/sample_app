@@ -5,6 +5,8 @@
         <%= gravatar_for @user %>
         <%= @user.name %>
       </h1>
+      <%= link_to image_tag('feed-icon-14x14.png') + " RSS feed",
+                  user_path(@user, :rss) %>
       <%= render 'follow_form' if signed_in? %>
       <% if @user.microposts.any? %>
         <table class="microposts" summary="User microposts">
