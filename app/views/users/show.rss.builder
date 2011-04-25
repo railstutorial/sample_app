@@ -3,7 +3,7 @@ xml.rss :version => "2.0" do
   xml.channel do
     xml.title "#{@user.name.possessive} Microposts"
     xml.description "User Microposts"
-    xml.link users_url(:rss)
+    xml.link user_url(@user, :rss)
     @microposts.each_with_index do |micropost, n|
       xml.item do
         xml.title "micropost #{n+1}"

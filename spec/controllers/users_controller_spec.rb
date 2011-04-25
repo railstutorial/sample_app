@@ -165,6 +165,11 @@ describe UsersController do
       response.should have_selector('title', :content => content)
     end
     
+    it "should have the right URL" do
+      do_get
+      response.body.should =~ /#{user_url(@user, :rss)}/
+    end
+    
     it "should have the right description" do
       do_get
       response.should have_selector('description',
