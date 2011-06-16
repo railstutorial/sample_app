@@ -20,7 +20,7 @@ class MicropostsController < ApplicationController
   private
   
     def authorized_user
-      @micropost = Micropost.find(params[:id])
-      redirect_to root_path unless current_user?(@micropost.user)
+      @micropost = current_user.microposts.where(:id => params[:id]).first
+      redirect_to root_path if @micropost.nil?
     end
 end
