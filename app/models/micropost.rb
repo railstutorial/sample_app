@@ -25,9 +25,9 @@ class Micropost < ActiveRecord::Base
   private
   
     def self.followed_by(user)
-      followed_ids = %(SELECT followed_id FROM relationships
-                       WHERE follower_id = :user_id)
-      where("user_id IN (#{followed_ids}) OR user_id = :user_id",
+      following_ids = %(SELECT followed_id FROM relationships
+                        WHERE follower_id = :user_id)
+      where("user_id IN (#{following_ids}) OR user_id = :user_id",
             :user_id => user)
     end
 end
