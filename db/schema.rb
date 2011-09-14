@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(:version => 20100831012055) do
     t.datetime "updated_at"
   end
 
+  add_index "microposts", ["created_at"], :name => "index_microposts_on_created_at"
   add_index "microposts", ["user_id"], :name => "index_microposts_on_user_id"
 
   create_table "relationships", :force => true do |t|
@@ -29,6 +30,7 @@ ActiveRecord::Schema.define(:version => 20100831012055) do
   end
 
   add_index "relationships", ["followed_id"], :name => "index_relationships_on_followed_id"
+  add_index "relationships", ["follower_id", "followed_id"], :name => "index_relationships_on_follower_id_and_followed_id", :unique => true
   add_index "relationships", ["follower_id"], :name => "index_relationships_on_follower_id"
 
   create_table "users", :force => true do |t|
