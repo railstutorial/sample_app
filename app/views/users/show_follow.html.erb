@@ -6,7 +6,8 @@
       <% if @users.any? %>
         <ul class="users">
           <%= render @users %>
-        </ul>
+        </ul>  
+        <%= will_paginate @users %>
       <% end %>
     </td>
     <td class="sidebar round">
