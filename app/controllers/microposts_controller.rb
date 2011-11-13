@@ -1,5 +1,5 @@
 class MicropostsController < ApplicationController
-  before_filter :authenticate
+  before_filter :authorize
   before_filter :authorized_user, :only => :destroy
   
   def create
