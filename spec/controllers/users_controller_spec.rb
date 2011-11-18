@@ -276,7 +276,7 @@ describe UsersController do
     end
   end
 
-  describe "authentication of edit/update actions" do
+  describe "authorization of edit/update actions" do
     
     before(:each) do
       @user = Factory(:user)
