@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="MicropostsController POST 'create' success" tests="3" time="0.07741317" failures="0" errors="0" skipped="0" timestamp="2015-08-05T12:03:26+01:00">
+  <testcase name="MicropostsController POST 'create' success should create a micropost" time="0.027493522">
+  </testcase>
+  <testcase name="MicropostsController POST 'create' success should redirect to the root path" time="0.024802085">
+  </testcase>
+  <testcase name="MicropostsController POST 'create' success should have a flash success message" time="0.024522585">
+  </testcase>
+</testsuite>

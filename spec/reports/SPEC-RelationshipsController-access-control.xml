@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="RelationshipsController access control" tests="2" time="0.02680429" failures="0" errors="0" skipped="0" timestamp="2015-08-05T12:03:26+01:00">
+  <testcase name="RelationshipsController access control should require signin for create" time="0.013565653">
+  </testcase>
+  <testcase name="RelationshipsController access control should require signin for destroy" time="0.012812632">
+  </testcase>
+</testsuite>

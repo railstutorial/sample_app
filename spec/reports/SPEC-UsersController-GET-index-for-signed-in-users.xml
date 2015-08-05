@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="UsersController GET 'index' for signed-in-users" tests="6" time="0.803411084" failures="0" errors="6" skipped="0" timestamp="2015-08-05T12:03:27+01:00">
+  <testcase name="UsersController GET 'index' for signed-in-users should be successful" time="0.161530243">
+    <error type="ActionView::Template::Error" message="no implicit conversion of nil into String">
+no implicit conversion of nil into String (ActionView::Template::Error)
+ActionView::Template::Error:
+no implicit conversion of nil into String
+     ./app/views/layouts/_stylesheets.html.erb:4:in `_app_views_layouts__stylesheets_html_erb__3206257638330253947_29876680_2053659563034079303'
+     ./app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb___1351326423015477348_41412780_4333374161733602675'
+     ./spec/controllers/users_controller_spec.rb:29:in `block (4 levels) in &lt;top (required)&gt;'    </error>
+  </testcase>
+  <testcase name="UsersController GET 'index' for signed-in-users should have the right title" time="0.14934253">
+    <error type="ActionView::Template::Error" message="no implicit conversion of nil into String">
+no implicit conversion of nil into String (ActionView::Template::Error)
+ActionView::Template::Error:
+no implicit conversion of nil into String
+     ./app/views/layouts/_stylesheets.html.erb:4:in `_app_views_layouts__stylesheets_html_erb__3206257638330253947_29876680_2053659563034079303'
+     ./app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb___1351326423015477348_41412780_4333374161733602675'
+     ./spec/controllers/users_controller_spec.rb:34:in `block (4 levels) in &lt;top (required)&gt;'    </error>
+  </testcase>
+  <testcase name="UsersController GET 'index' for signed-in-users should have an element for each user" time="0.118689224">
+    <error type="ActionView::Template::Error" message="no implicit conversion of nil into String">
+no implicit conversion of nil into String (ActionView::Template::Error)
+ActionView::Template::Error:
+no implicit conversion of nil into String
+     ./app/views/layouts/_stylesheets.html.erb:4:in `_app_views_layouts__stylesheets_html_erb__3206257638330253947_29876680_2053659563034079303'
+     ./app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb___1351326423015477348_41412780_4333374161733602675'
+     ./spec/controllers/users_controller_spec.rb:39:in `block (4 levels) in &lt;top (required)&gt;'    </error>
+  </testcase>
+  <testcase name="UsersController GET 'index' for signed-in-users should paginate users" time="0.115183093">
+    <error type="ActionView::Template::Error" message="no implicit conversion of nil into String">
+no implicit conversion of nil into String (ActionView::Template::Error)
+ActionView::Template::Error:
+no implicit conversion of nil into String
+     ./app/views/layouts/_stylesheets.html.erb:4:in `_app_views_layouts__stylesheets_html_erb__3206257638330253947_29876680_2053659563034079303'
+     ./app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb___1351326423015477348_41412780_4333374161733602675'
+     ./spec/controllers/users_controller_spec.rb:46:in `block (4 levels) in &lt;top (required)&gt;'    </error>
+  </testcase>
+  <testcase name="UsersController GET 'index' for signed-in-users should have delete links for admins" time="0.13558196">
+    <error type="ActionView::Template::Error" message="no implicit conversion of nil into String">
+no implicit conversion of nil into String (ActionView::Template::Error)
+ActionView::Template::Error:
+no implicit conversion of nil into String
+     ./app/views/layouts/_stylesheets.html.erb:4:in `_app_views_layouts__stylesheets_html_erb__3206257638330253947_29876680_2053659563034079303'
+     ./app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb___1351326423015477348_41412780_4333374161733602675'
+     ./spec/controllers/users_controller_spec.rb:58:in `block (4 levels) in &lt;top (required)&gt;'    </error>
+  </testcase>
+  <testcase name="UsersController GET 'index' for signed-in-users should not have delete links for non-admins" time="0.121919303">
+    <error type="ActionView::Template::Error" message="no implicit conversion of nil into String">
+no implicit conversion of nil into String (ActionView::Template::Error)
+ActionView::Template::Error:
+no implicit conversion of nil into String
+     ./app/views/layouts/_stylesheets.html.erb:4:in `_app_views_layouts__stylesheets_html_erb__3206257638330253947_29876680_2053659563034079303'
+     ./app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb___1351326423015477348_41412780_4333374161733602675'
+     ./spec/controllers/users_controller_spec.rb:65:in `block (4 levels) in &lt;top (required)&gt;'    </error>
+  </testcase>
+</testsuite>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="UsersController POST 'create' success" tests="4" time="0.105936098" failures="0" errors="0" skipped="0" timestamp="2015-08-05T12:03:28+01:00">
+  <testcase name="UsersController POST 'create' success should create a user" time="0.023922431">
+  </testcase>
+  <testcase name="UsersController POST 'create' success should redirect to the user show page" time="0.025652695">
+  </testcase>
+  <testcase name="UsersController POST 'create' success should have a welcome message" time="0.030863526">
+  </testcase>
+  <testcase name="UsersController POST 'create' success should sign the user in" time="0.02477479">
+  </testcase>
+</testsuite>

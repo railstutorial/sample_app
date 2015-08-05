@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="UsersController authentication of edit/update actions for non-signed-in users" tests="2" time="0.042679462" failures="0" errors="0" skipped="0" timestamp="2015-08-05T12:03:28+01:00">
+  <testcase name="UsersController authentication of edit/update actions for non-signed-in users should deny access to 'edit'" time="0.021275206">
+  </testcase>
+  <testcase name="UsersController authentication of edit/update actions for non-signed-in users should deny access to 'update'" time="0.020939319">
+  </testcase>
+</testsuite>

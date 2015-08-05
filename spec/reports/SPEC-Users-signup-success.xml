@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Users signup success" tests="1" time="0.00860286" failures="0" errors="1" skipped="0" timestamp="2015-08-05T12:03:30+01:00">
+  <testcase name="Users signup success should make a new user" time="0.0082824">
+    <error type="ActionView::Template::Error" message="no implicit conversion of nil into String">
+no implicit conversion of nil into String (ActionView::Template::Error)
+ActionView::Template::Error:
+no implicit conversion of nil into String
+     ./app/views/layouts/_stylesheets.html.erb:4:in `_app_views_layouts__stylesheets_html_erb__3206257638330253947_29876680_2053659563034079303'
+     ./app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb___1351326423015477348_41412780_4333374161733602675'
+     ./spec/requests/users_spec.rb:25:in `block (5 levels) in &lt;top (required)&gt;'
+     ./spec/requests/users_spec.rb:24:in `block (4 levels) in &lt;top (required)&gt;'    </error>
+  </testcase>
+</testsuite>

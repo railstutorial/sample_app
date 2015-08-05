@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="UsersController PUT 'update' failure" tests="2" time="0.083044064" failures="0" errors="2" skipped="0" timestamp="2015-08-05T12:03:28+01:00">
+  <testcase name="UsersController PUT 'update' failure should render the 'edit' page" time="0.040996618">
+    <error type="ActionView::Template::Error" message="no implicit conversion of nil into String">
+no implicit conversion of nil into String (ActionView::Template::Error)
+ActionView::Template::Error:
+no implicit conversion of nil into String
+     ./app/views/layouts/_stylesheets.html.erb:4:in `_app_views_layouts__stylesheets_html_erb__3206257638330253947_29876680_2053659563034079303'
+     ./app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb___1351326423015477348_41412780_4333374161733602675'
+     ./app/controllers/users_controller.rb:58:in `update'
+     ./spec/controllers/users_controller_spec.rb:247:in `block (4 levels) in &lt;top (required)&gt;'    </error>
+  </testcase>
+  <testcase name="UsersController PUT 'update' failure should have the right title" time="0.041538913">
+    <error type="ActionView::Template::Error" message="no implicit conversion of nil into String">
+no implicit conversion of nil into String (ActionView::Template::Error)
+ActionView::Template::Error:
+no implicit conversion of nil into String
+     ./app/views/layouts/_stylesheets.html.erb:4:in `_app_views_layouts__stylesheets_html_erb__3206257638330253947_29876680_2053659563034079303'
+     ./app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb___1351326423015477348_41412780_4333374161733602675'
+     ./app/controllers/users_controller.rb:58:in `update'
+     ./spec/controllers/users_controller_spec.rb:252:in `block (4 levels) in &lt;top (required)&gt;'    </error>
+  </testcase>
+</testsuite>

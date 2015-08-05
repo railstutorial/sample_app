@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="RelationshipsController POST 'create'" tests="2" time="0.07880903" failures="0" errors="0" skipped="0" timestamp="2015-08-05T12:03:26+01:00">
+  <testcase name="RelationshipsController POST 'create' should create a relationship" time="0.028372192">
+  </testcase>
+  <testcase name="RelationshipsController POST 'create' should create a relationship with Ajax" time="0.04992267">
+  </testcase>
+</testsuite>

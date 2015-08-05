@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="MicropostsController DELETE 'destroy' for an authorized user" tests="1" time="0.025677778" failures="0" errors="0" skipped="0" timestamp="2015-08-05T12:03:26+01:00">
+  <testcase name="MicropostsController DELETE 'destroy' for an authorized user should destroy the micropost" time="0.025237185">
+  </testcase>
+</testsuite>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="User micropost associations" tests="3" time="0.055174742" failures="0" errors="0" skipped="0" timestamp="2015-08-05T12:03:30+01:00">
+  <testcase name="User micropost associations should have a microposts attribute" time="0.013501028">
+  </testcase>
+  <testcase name="User micropost associations should have the right microposts in the right order" time="0.013855385">
+  </testcase>
+  <testcase name="User micropost associations should destroy associated microposts" time="0.027293806">
+  </testcase>
+</testsuite>

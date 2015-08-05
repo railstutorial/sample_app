@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="User admin attribute" tests="3" time="0.032233891" failures="0" errors="0" skipped="0" timestamp="2015-08-05T12:03:30+01:00">
+  <testcase name="User admin attribute should respond to admin" time="0.010097004">
+  </testcase>
+  <testcase name="User admin attribute should not be an admin by default" time="0.010550864">
+  </testcase>
+  <testcase name="User admin attribute should be convertible to an admin" time="0.011029159">
+  </testcase>
+</testsuite>

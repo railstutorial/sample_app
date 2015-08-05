@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="UsersController GET 'index' for non-signed-in users" tests="1" time="0.01334502" failures="0" errors="0" skipped="0" timestamp="2015-08-05T12:03:27+01:00">
+  <testcase name="UsersController GET 'index' for non-signed-in users should deny access" time="0.013042113">
+  </testcase>
+</testsuite>

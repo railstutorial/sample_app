@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="UsersController GET 'show'" tests="9" time="0.399475206" failures="0" errors="9" skipped="0" timestamp="2015-08-05T12:03:27+01:00">
+  <testcase name="UsersController GET 'show' should be successful" time="0.048382062">
+    <error type="ActionView::Template::Error" message="no implicit conversion of nil into String">
+no implicit conversion of nil into String (ActionView::Template::Error)
+ActionView::Template::Error:
+no implicit conversion of nil into String
+     ./app/views/layouts/_stylesheets.html.erb:4:in `_app_views_layouts__stylesheets_html_erb__3206257638330253947_29876680_2053659563034079303'
+     ./app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb___1351326423015477348_41412780_4333374161733602675'
+     ./spec/controllers/users_controller_spec.rb:79:in `block (3 levels) in &lt;top (required)&gt;'    </error>
+  </testcase>
+  <testcase name="UsersController GET 'show' should find the right user" time="0.030544722">
+    <error type="ActionView::Template::Error" message="no implicit conversion of nil into String">
+no implicit conversion of nil into String (ActionView::Template::Error)
+ActionView::Template::Error:
+no implicit conversion of nil into String
+     ./app/views/layouts/_stylesheets.html.erb:4:in `_app_views_layouts__stylesheets_html_erb__3206257638330253947_29876680_2053659563034079303'
+     ./app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb___1351326423015477348_41412780_4333374161733602675'
+     ./spec/controllers/users_controller_spec.rb:84:in `block (3 levels) in &lt;top (required)&gt;'    </error>
+  </testcase>
+  <testcase name="UsersController GET 'show' should have the right title" time="0.026996552">
+    <error type="ActionView::Template::Error" message="no implicit conversion of nil into String">
+no implicit conversion of nil into String (ActionView::Template::Error)
+ActionView::Template::Error:
+no implicit conversion of nil into String
+     ./app/views/layouts/_stylesheets.html.erb:4:in `_app_views_layouts__stylesheets_html_erb__3206257638330253947_29876680_2053659563034079303'
+     ./app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb___1351326423015477348_41412780_4333374161733602675'
+     ./spec/controllers/users_controller_spec.rb:89:in `block (3 levels) in &lt;top (required)&gt;'    </error>
+  </testcase>
+  <testcase name="UsersController GET 'show' should have the user's name" time="0.026607294">
+    <error type="ActionView::Template::Error" message="no implicit conversion of nil into String">
+no implicit conversion of nil into String (ActionView::Template::Error)
+ActionView::Template::Error:
+no implicit conversion of nil into String
+     ./app/views/layouts/_stylesheets.html.erb:4:in `_app_views_layouts__stylesheets_html_erb__3206257638330253947_29876680_2053659563034079303'
+     ./app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb___1351326423015477348_41412780_4333374161733602675'
+     ./spec/controllers/users_controller_spec.rb:94:in `block (3 levels) in &lt;top (required)&gt;'    </error>
+  </testcase>
+  <testcase name="UsersController GET 'show' should have a profile image" time="0.02675112">
+    <error type="ActionView::Template::Error" message="no implicit conversion of nil into String">
+no implicit conversion of nil into String (ActionView::Template::Error)
+ActionView::Template::Error:
+no implicit conversion of nil into String
+     ./app/views/layouts/_stylesheets.html.erb:4:in `_app_views_layouts__stylesheets_html_erb__3206257638330253947_29876680_2053659563034079303'
+     ./app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb___1351326423015477348_41412780_4333374161733602675'
+     ./spec/controllers/users_controller_spec.rb:99:in `block (3 levels) in &lt;top (required)&gt;'    </error>
+  </testcase>
+  <testcase name="UsersController GET 'show' should have the right URL" time="0.026853284">
+    <error type="ActionView::Template::Error" message="no implicit conversion of nil into String">
+no implicit conversion of nil into String (ActionView::Template::Error)
+ActionView::Template::Error:
+no implicit conversion of nil into String
+     ./app/views/layouts/_stylesheets.html.erb:4:in `_app_views_layouts__stylesheets_html_erb__3206257638330253947_29876680_2053659563034079303'
+     ./app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb___1351326423015477348_41412780_4333374161733602675'
+     ./spec/controllers/users_controller_spec.rb:104:in `block (3 levels) in &lt;top (required)&gt;'    </error>
+  </testcase>
+  <testcase name="UsersController GET 'show' should show the user's microposts" time="0.047099048">
+    <error type="ActionView::Template::Error" message="no implicit conversion of nil into String">
+no implicit conversion of nil into String (ActionView::Template::Error)
+ActionView::Template::Error:
+no implicit conversion of nil into String
+     ./app/views/layouts/_stylesheets.html.erb:4:in `_app_views_layouts__stylesheets_html_erb__3206257638330253947_29876680_2053659563034079303'
+     ./app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb___1351326423015477348_41412780_4333374161733602675'
+     ./spec/controllers/users_controller_spec.rb:112:in `block (3 levels) in &lt;top (required)&gt;'    </error>
+  </testcase>
+  <testcase name="UsersController GET 'show' should paginate microposts" time="0.108294943">
+    <error type="ActionView::Template::Error" message="no implicit conversion of nil into String">
+no implicit conversion of nil into String (ActionView::Template::Error)
+ActionView::Template::Error:
+no implicit conversion of nil into String
+     ./app/views/layouts/_stylesheets.html.erb:4:in `_app_views_layouts__stylesheets_html_erb__3206257638330253947_29876680_2053659563034079303'
+     ./app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb___1351326423015477348_41412780_4333374161733602675'
+     ./spec/controllers/users_controller_spec.rb:119:in `block (3 levels) in &lt;top (required)&gt;'    </error>
+  </testcase>
+  <testcase name="UsersController GET 'show' should display the micropost count" time="0.056449441">
+    <error type="ActionView::Template::Error" message="no implicit conversion of nil into String">
+no implicit conversion of nil into String (ActionView::Template::Error)
+ActionView::Template::Error:
+no implicit conversion of nil into String
+     ./app/views/layouts/_stylesheets.html.erb:4:in `_app_views_layouts__stylesheets_html_erb__3206257638330253947_29876680_2053659563034079303'
+     ./app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb___1351326423015477348_41412780_4333374161733602675'
+     ./spec/controllers/users_controller_spec.rb:125:in `block (3 levels) in &lt;top (required)&gt;'    </error>
+  </testcase>
+</testsuite>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="UsersController follow pages when not signed in" tests="2" time="0.02852995" failures="0" errors="0" skipped="0" timestamp="2015-08-05T12:03:29+01:00">
+  <testcase name="UsersController follow pages when not signed in should protect 'following'" time="0.013509972">
+  </testcase>
+  <testcase name="UsersController follow pages when not signed in should protect 'followers'" time="0.01457745">
+  </testcase>
+</testsuite>
