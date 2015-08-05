@@ -8,3 +8,4 @@ doc/
 *~
 .project
 .DS_Store
+spec/reports/*
