@@ -1,0 +1,332 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang='en' xml:lang='en' xmlns='http://www.w3.org/1999/xhtml'>
+  <head>
+    <title>spec/requests/layout_links_spec.rb</title>
+    <link href="./assets/0.2.3/screen.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="./assets/0.2.3/print.css" media="print" rel="stylesheet" type="text/css" />
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+    <script type="text/javascript" src="./assets/0.2.3/rcov.js"></script>
+  </head>
+  <body>
+    <h1>Sample app C0 Coverage Information - Simploco - RCov</h1>
+    <h2>spec/requests/layout_links_spec.rb</h2>
+
+    <div class="report_table_wrapper">
+      <table class='report' id='report_table'>
+        <thead>
+          <tr>
+            <th class="left_align">Name</th>
+            <th class="right_align">Total Lines</th>
+            <th class="right_align">Lines of Code</th>
+            <th class="left_align">Total Coverage</th>
+            <th class="left_align">Code Coverage</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="left_align"><a href="spec-requests-layout_links_spec_rb.html">spec/requests/layout_links_spec.rb</a></td>
+            <td class='right_align'><tt>91</tt></td>
+            <td class='right_align'><tt>55</tt></td>
+            <td class="left_align"><div class="percent_graph_legend"><tt class=''>69.23%</tt></div>
+      <div class="percent_graph">
+        <div class="covered" style="width:69px"></div>
+        <div class="uncovered" style="width:31px"></div>
+      </div></td>
+            <td class="left_align"><div class="percent_graph_legend"><tt class=''>49.09%</tt></div>
+      <div class="percent_graph">
+        <div class="covered" style="width:49px"></div>
+        <div class="uncovered" style="width:51px"></div>
+      </div></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Key</h3>
+
+    <div class="key"><pre><span class='marked'>Code reported as executed by Ruby looks like this...</span><span class='marked1'>and this: this line is also marked as covered.</span><span class='inferred'>Lines considered as run by rcov, but not reported by Ruby, look like this,</span><span class='inferred1'>and this: these lines were inferred by rcov (using simple heuristics).</span><span class='uncovered'>Finally, here's a line marked as not executed.</span></pre></div>
+
+    <h3>Coverage Details</h3>
+
+    <table class="details">
+      <tbody>
+        <tr class="marked">
+          <td><pre><a name="line2">2</a> require &#39;spec_helper&#39;</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line3">3</a> </pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line4">4</a> describe &quot;LayoutLinks&quot; do</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line5">5</a>   </pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line6">6</a>   it &quot;should have a Home page at &#39;/&#39;&quot; do</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line7">7</a>     get &#39;/&#39;</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line8">8</a>     response.should have_selector(&#39;title&#39;, :content =&gt; &quot;Home&quot;)</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line9">9</a>   end</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line10">10</a>   </pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line11">11</a>   it &quot;should have a Contact page at &#39;/contact&#39;&quot; do</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line12">12</a>     get &#39;/contact&#39;</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line13">13</a>     response.should have_selector(&#39;title&#39;, :content =&gt; &quot;Contact&quot;)</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line14">14</a>   end</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line15">15</a>   </pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line16">16</a>   it &quot;should have an About page at &#39;/about&#39;&quot; do</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line17">17</a>     get &#39;/about&#39;</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line18">18</a>     response.should have_selector(&#39;title&#39;, :content =&gt; &quot;About&quot;)</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line19">19</a>   end</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line20">20</a>   </pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line21">21</a>   it &quot;should have a Help page at &#39;/help&#39;&quot; do</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line22">22</a>     get &#39;/help&#39;</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line23">23</a>     response.should have_selector(&#39;title&#39;, :content =&gt; &quot;Help&quot;)</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line24">24</a>   end</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line25">25</a>   </pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line26">26</a>   it &quot;should have a signup page at &#39;/signup&#39;&quot; do</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line27">27</a>     get &#39;/signup&#39;</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line28">28</a>     response.should have_selector(&#39;title&#39;, :content =&gt; &quot;Sign up&quot;)</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line29">29</a>   end</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line30">30</a>   </pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line31">31</a>   it &quot;should have a signin page at &#39;/signin&#39;&quot; do</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line32">32</a>     get &#39;/signin&#39;</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line33">33</a>     response.should have_selector(&#39;title&#39;, :content =&gt; &quot;Sign in&quot;)</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line34">34</a>   end</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line35">35</a>   </pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line36">36</a>   it &quot;should have the right links on the layout&quot; do</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line37">37</a>     visit root_path</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line38">38</a>     response.should have_selector(&#39;title&#39;, :content =&gt; &quot;Home&quot;)</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line39">39</a>     click_link &quot;About&quot;</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line40">40</a>     response.should have_selector(&#39;title&#39;, :content =&gt; &quot;About&quot;)</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line41">41</a>     click_link &quot;Contact&quot;</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line42">42</a>     response.should have_selector(&#39;title&#39;, :content =&gt; &quot;Contact&quot;)</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line43">43</a>     click_link &quot;Home&quot;</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line44">44</a>     response.should have_selector(&#39;title&#39;, :content =&gt; &quot;Home&quot;)</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line45">45</a>     click_link &quot;Sign up now!&quot;</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line46">46</a>     response.should have_selector(&#39;title&#39;, :content =&gt; &quot;Sign up&quot;)</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line47">47</a>     response.should have_selector(&#39;a[href=&quot;/&quot;]&gt;img&#39;)</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line48">48</a>   end</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line49">49</a>   </pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line50">50</a>   describe &quot;when not signed in&quot; do</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line51">51</a>     it &quot;should have a signin link&quot; do</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line52">52</a>       visit root_path</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line53">53</a>       response.should have_selector(&quot;a&quot;, :href =&gt; signin_path,</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line54">54</a>                                          :content =&gt; &quot;Sign in&quot;)</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line55">55</a>     end</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line56">56</a>   end</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line57">57</a>   </pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line58">58</a>   describe &quot;when signed in&quot; do</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line59">59</a>     </pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line60">60</a>     before(:each) do</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line61">61</a>       @user = Factory(:user)</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line62">62</a>       visit signin_path</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line63">63</a>       fill_in :email,    :with =&gt; @user.email</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line64">64</a>       fill_in :password, :with =&gt; @user.password</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line65">65</a>       click_button</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line66">66</a>     end</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line67">67</a>     </pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line68">68</a>     it &quot;should have a signout link&quot; do</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line69">69</a>       visit root_path</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line70">70</a>       response.should have_selector(&quot;a&quot;, :href =&gt; signout_path,</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line71">71</a>                                          :content =&gt; &quot;Sign out&quot;)</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line72">72</a>     end</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line73">73</a>     </pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line74">74</a>     it &quot;should have a profile link&quot; do</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line75">75</a>       visit root_path</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line76">76</a>       response.should have_selector(&quot;a&quot;, :href =&gt; user_path(@user),</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line77">77</a>                                          :content =&gt; &quot;Profile&quot;)</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line78">78</a>     end</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line79">79</a>     </pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line80">80</a>     it &quot;should have a settings link&quot; do</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line81">81</a>       visit root_path</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line82">82</a>       response.should have_selector(&quot;a&quot;, :href =&gt; edit_user_path(@user),</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line83">83</a>                                          :content =&gt; &quot;Settings&quot;)</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line84">84</a>     end</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line85">85</a>     </pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line86">86</a>     it &quot;should have a users link&quot; do</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line87">87</a>       visit root_path</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line88">88</a>       response.should have_selector(&quot;a&quot;, :href =&gt; users_path,</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line89">89</a>                                          :content =&gt; &quot;Users&quot;)</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line90">90</a>     end</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line91">91</a>   end</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line92">92</a> end</pre></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>Generated on 2015-08-05 12:46:47 +0100 with <a href="https://github.com/fguillen/simplecov-rcov">SimpleCov-RCov 0.2.3</a></p>
+
+  </body>
+</html>

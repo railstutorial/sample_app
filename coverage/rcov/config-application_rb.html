@@ -1,0 +1,185 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang='en' xml:lang='en' xmlns='http://www.w3.org/1999/xhtml'>
+  <head>
+    <title>config/application.rb</title>
+    <link href="./assets/0.2.3/screen.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="./assets/0.2.3/print.css" media="print" rel="stylesheet" type="text/css" />
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+    <script type="text/javascript" src="./assets/0.2.3/rcov.js"></script>
+  </head>
+  <body>
+    <h1>Sample app C0 Coverage Information - Simploco - RCov</h1>
+    <h2>config/application.rb</h2>
+
+    <div class="report_table_wrapper">
+      <table class='report' id='report_table'>
+        <thead>
+          <tr>
+            <th class="left_align">Name</th>
+            <th class="right_align">Total Lines</th>
+            <th class="right_align">Lines of Code</th>
+            <th class="left_align">Total Coverage</th>
+            <th class="left_align">Code Coverage</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="left_align"><a href="config-application_rb.html">config/application.rb</a></td>
+            <td class='right_align'><tt>42</tt></td>
+            <td class='right_align'><tt>7</tt></td>
+            <td class="left_align"><div class="percent_graph_legend"><tt class=''>100.00%</tt></div>
+      <div class="percent_graph">
+        <div class="covered" style="width:100px"></div>
+        <div class="uncovered" style="width:0px"></div>
+      </div></td>
+            <td class="left_align"><div class="percent_graph_legend"><tt class=''>100.00%</tt></div>
+      <div class="percent_graph">
+        <div class="covered" style="width:100px"></div>
+        <div class="uncovered" style="width:0px"></div>
+      </div></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Key</h3>
+
+    <div class="key"><pre><span class='marked'>Code reported as executed by Ruby looks like this...</span><span class='marked1'>and this: this line is also marked as covered.</span><span class='inferred'>Lines considered as run by rcov, but not reported by Ruby, look like this,</span><span class='inferred1'>and this: these lines were inferred by rcov (using simple heuristics).</span><span class='uncovered'>Finally, here's a line marked as not executed.</span></pre></div>
+
+    <h3>Coverage Details</h3>
+
+    <table class="details">
+      <tbody>
+        <tr class="marked">
+          <td><pre><a name="line2">2</a> require File.expand_path(&#39;../boot&#39;, __FILE__)</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line3">3</a> </pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line4">4</a> require &#39;rails/all&#39;</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line5">5</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line6">6</a> # If you have a Gemfile, require the gems listed there, including any gems</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line7">7</a> # you&#39;ve limited to :test, :development, or :production.</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line8">8</a> Bundler.require(:default, Rails.env) if defined?(Bundler)</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line9">9</a> </pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line10">10</a> module SampleApp</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line11">11</a>   class Application &lt; Rails::Application</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line12">12</a>     # Settings in config/environments/* take precedence over those specified here.</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line13">13</a>     # Application configuration should go into files in config/initializers</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line14">14</a>     # -- all .rb files in that directory are automatically loaded.</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line15">15</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line16">16</a>     # Custom directories with classes and modules you want to be autoloadable.</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line17">17</a>     # config.autoload_paths += %W(#{config.root}/extras)</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line18">18</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line19">19</a>     # Only load the plugins named here, in the order given (default is alphabetical).</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line20">20</a>     # :all can be used as a placeholder for all plugins not explicitly named.</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line21">21</a>     # config.plugins = [ :exception_notification, :ssl_requirement, :all ]</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line22">22</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line23">23</a>     # Activate observers that should always be running.</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line24">24</a>     # config.active_record.observers = :cacher, :garbage_collector, :forum_observer</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line25">25</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line26">26</a>     # Set Time.zone default to the specified zone and make Active Record auto-convert to this zone.</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line27">27</a>     # Run &quot;rake -D time&quot; for a list of tasks for finding time zone names. Default is UTC.</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line28">28</a>     # config.time_zone = &#39;Central Time (US &amp; Canada)&#39;</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line29">29</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line30">30</a>     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line31">31</a>     # config.i18n.load_path += Dir[Rails.root.join(&#39;my&#39;, &#39;locales&#39;, &#39;*.{rb,yml}&#39;).to_s]</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line32">32</a>     # config.i18n.default_locale = :de</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line33">33</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line34">34</a>     # JavaScript files you want as :defaults (application.js is always included).</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line35">35</a>     # config.action_view.javascript_expansions[:defaults] = %w(jquery rails)</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line36">36</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line37">37</a>     # Configure the default encoding used in templates for Ruby 1.9.</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line38">38</a>     config.encoding = &quot;utf-8&quot;</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line39">39</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line40">40</a>     # Configure sensitive parameters which will be filtered from the log file.</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line41">41</a>     config.filter_parameters += [:password]</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line42">42</a>   end</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line43">43</a> end</pre></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>Generated on 2015-08-05 12:46:47 +0100 with <a href="https://github.com/fguillen/simplecov-rcov">SimpleCov-RCov 0.2.3</a></p>
+
+  </body>
+</html>

@@ -1,0 +1,257 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang='en' xml:lang='en' xmlns='http://www.w3.org/1999/xhtml'>
+  <head>
+    <title>spec/requests/users_spec.rb</title>
+    <link href="./assets/0.2.3/screen.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="./assets/0.2.3/print.css" media="print" rel="stylesheet" type="text/css" />
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+    <script type="text/javascript" src="./assets/0.2.3/rcov.js"></script>
+  </head>
+  <body>
+    <h1>Sample app C0 Coverage Information - Simploco - RCov</h1>
+    <h2>spec/requests/users_spec.rb</h2>
+
+    <div class="report_table_wrapper">
+      <table class='report' id='report_table'>
+        <thead>
+          <tr>
+            <th class="left_align">Name</th>
+            <th class="right_align">Total Lines</th>
+            <th class="right_align">Lines of Code</th>
+            <th class="left_align">Total Coverage</th>
+            <th class="left_align">Code Coverage</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="left_align"><a href="spec-requests-users_spec_rb.html">spec/requests/users_spec.rb</a></td>
+            <td class='right_align'><tt>66</tt></td>
+            <td class='right_align'><tt>44</tt></td>
+            <td class="left_align"><div class="percent_graph_legend"><tt class=''>62.12%</tt></div>
+      <div class="percent_graph">
+        <div class="covered" style="width:62px"></div>
+        <div class="uncovered" style="width:38px"></div>
+      </div></td>
+            <td class="left_align"><div class="percent_graph_legend"><tt class=''>43.18%</tt></div>
+      <div class="percent_graph">
+        <div class="covered" style="width:43px"></div>
+        <div class="uncovered" style="width:57px"></div>
+      </div></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Key</h3>
+
+    <div class="key"><pre><span class='marked'>Code reported as executed by Ruby looks like this...</span><span class='marked1'>and this: this line is also marked as covered.</span><span class='inferred'>Lines considered as run by rcov, but not reported by Ruby, look like this,</span><span class='inferred1'>and this: these lines were inferred by rcov (using simple heuristics).</span><span class='uncovered'>Finally, here's a line marked as not executed.</span></pre></div>
+
+    <h3>Coverage Details</h3>
+
+    <table class="details">
+      <tbody>
+        <tr class="marked">
+          <td><pre><a name="line2">2</a> require &#39;spec_helper&#39;</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line3">3</a> </pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line4">4</a> describe &quot;Users&quot; do</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line5">5</a>   </pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line6">6</a>   describe &quot;signup&quot; do</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line7">7</a> </pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line8">8</a>     describe &quot;failure&quot; do</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line9">9</a>       it &quot;should not make a new user&quot; do</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line10">10</a>         lambda do</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line11">11</a>           visit signup_path</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line12">12</a>           fill_in &quot;Name&quot;,         :with =&gt; &quot;&quot;</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line13">13</a>           fill_in &quot;Email&quot;,        :with =&gt; &quot;&quot;</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line14">14</a>           fill_in &quot;Password&quot;,     :with =&gt; &quot;&quot;</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line15">15</a>           fill_in &quot;Confirmation&quot;, :with =&gt; &quot;&quot;</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line16">16</a>           click_button</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line17">17</a>           response.should render_template(&#39;users/new&#39;)</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line18">18</a>           response.should have_selector(&#39;div#error_explanation&#39;)</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line19">19</a>         end.should_not change(User, :count)</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line20">20</a>       end</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line21">21</a>     end</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line22">22</a> </pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line23">23</a>     describe &quot;success&quot; do</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line24">24</a>       it &quot;should make a new user&quot; do</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line25">25</a>         lambda do</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line26">26</a>           visit signup_path</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line27">27</a>           fill_in &quot;Name&quot;,         :with =&gt; &quot;Example User&quot;</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line28">28</a>           fill_in &quot;Email&quot;,        :with =&gt; &quot;user@example.com&quot;</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line29">29</a>           fill_in &quot;Password&quot;,     :with =&gt; &quot;foobar&quot;</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line30">30</a>           fill_in &quot;Confirmation&quot;, :with =&gt; &quot;foobar&quot;</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line31">31</a>           click_button</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line32">32</a>           response.should have_selector(&#39;div.flash.success&#39;,</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line33">33</a>                                         :content =&gt; &quot;Welcome&quot;)</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line34">34</a>           response.should render_template(&#39;users/show&#39;)</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line35">35</a>         end.should change(User, :count).by(1)</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line36">36</a>       end</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line37">37</a>     end</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line38">38</a>   end</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line39">39</a> </pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line40">40</a>   describe &quot;signin&quot; do</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line41">41</a>     </pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line42">42</a>     describe &quot;failure&quot; do</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line43">43</a>       it &quot;should not sign a user in&quot; do</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line44">44</a>         visit signin_path</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line45">45</a>         fill_in &quot;Email&quot;,    :with =&gt; &quot;&quot;</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line46">46</a>         fill_in &quot;Password&quot;, :with =&gt; &quot;&quot;</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line47">47</a>         click_button</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line48">48</a>         response.should have_selector(&#39;div.flash.error&#39;,</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line49">49</a>                                       :content =&gt; &quot;Invalid&quot;)</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line50">50</a>         response.should render_template(&#39;sessions/new&#39;)</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line51">51</a>       end</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line52">52</a>     end</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line53">53</a>     </pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line54">54</a>     describe &quot;success&quot; do</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line55">55</a>       it &quot;should sign a user in and out&quot; do</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line56">56</a>         user = Factory(:user)</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line57">57</a>         visit signin_path</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line58">58</a>         fill_in &quot;Email&quot;,    :with =&gt; user.email</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line59">59</a>         fill_in &quot;Password&quot;, :with =&gt; user.password</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line60">60</a>         click_button</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line61">61</a>         controller.should be_signed_in</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line62">62</a>         click_link &quot;Sign out&quot;</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line63">63</a>         controller.should_not be_signed_in</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line64">64</a>       end</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line65">65</a>     end</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line66">66</a>   end</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line67">67</a> end</pre></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>Generated on 2015-08-05 12:46:47 +0100 with <a href="https://github.com/fguillen/simplecov-rcov">SimpleCov-RCov 0.2.3</a></p>
+
+  </body>
+</html>

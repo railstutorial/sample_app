@@ -1,0 +1,293 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang='en' xml:lang='en' xmlns='http://www.w3.org/1999/xhtml'>
+  <head>
+    <title>config/routes.rb</title>
+    <link href="./assets/0.2.3/screen.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="./assets/0.2.3/print.css" media="print" rel="stylesheet" type="text/css" />
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+    <script type="text/javascript" src="./assets/0.2.3/rcov.js"></script>
+  </head>
+  <body>
+    <h1>Sample app C0 Coverage Information - Simploco - RCov</h1>
+    <h2>config/routes.rb</h2>
+
+    <div class="report_table_wrapper">
+      <table class='report' id='report_table'>
+        <thead>
+          <tr>
+            <th class="left_align">Name</th>
+            <th class="right_align">Total Lines</th>
+            <th class="right_align">Lines of Code</th>
+            <th class="left_align">Total Coverage</th>
+            <th class="left_align">Code Coverage</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="left_align"><a href="config-routes_rb.html">config/routes.rb</a></td>
+            <td class='right_align'><tt>78</tt></td>
+            <td class='right_align'><tt>14</tt></td>
+            <td class="left_align"><div class="percent_graph_legend"><tt class=''>100.00%</tt></div>
+      <div class="percent_graph">
+        <div class="covered" style="width:100px"></div>
+        <div class="uncovered" style="width:0px"></div>
+      </div></td>
+            <td class="left_align"><div class="percent_graph_legend"><tt class=''>100.00%</tt></div>
+      <div class="percent_graph">
+        <div class="covered" style="width:100px"></div>
+        <div class="uncovered" style="width:0px"></div>
+      </div></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Key</h3>
+
+    <div class="key"><pre><span class='marked'>Code reported as executed by Ruby looks like this...</span><span class='marked1'>and this: this line is also marked as covered.</span><span class='inferred'>Lines considered as run by rcov, but not reported by Ruby, look like this,</span><span class='inferred1'>and this: these lines were inferred by rcov (using simple heuristics).</span><span class='uncovered'>Finally, here's a line marked as not executed.</span></pre></div>
+
+    <h3>Coverage Details</h3>
+
+    <table class="details">
+      <tbody>
+        <tr class="marked">
+          <td><pre><a name="line2">2</a> SampleApp::Application.routes.draw do</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line3">3</a> </pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line4">4</a>   resources :users do</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line5">5</a>     member do</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line6">6</a>       get :following, :followers</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line7">7</a>     end</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line8">8</a>   end</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line9">9</a>   </pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line10">10</a>   resources :sessions,      :only =&gt; [:new, :create, :destroy]</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line11">11</a>   resources :microposts,    :only =&gt; [:create, :destroy]</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line12">12</a>   resources :relationships, :only =&gt; [:create, :destroy]</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line13">13</a>   </pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line14">14</a>   root :to =&gt; &quot;pages#home&quot;</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line15">15</a> </pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line16">16</a>   match &#39;/contact&#39;, :to =&gt; &#39;pages#contact&#39;</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line17">17</a>   match &#39;/about&#39;,   :to =&gt; &#39;pages#about&#39;</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line18">18</a>   match &#39;/help&#39;,    :to =&gt; &#39;pages#help&#39;</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line19">19</a>   match &#39;/signup&#39;,  :to =&gt; &#39;users#new&#39;</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line20">20</a>   match &#39;/signin&#39;,  :to =&gt; &#39;sessions#new&#39;</pre></td>
+        </tr>
+        <tr class="marked">
+          <td><pre><a name="line21">21</a>   match &#39;/signout&#39;, :to =&gt; &#39;sessions#destroy&#39;</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line22">22</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line23">23</a>   # The priority is based upon order of creation:</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line24">24</a>   # first created -&gt; highest priority.</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line25">25</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line26">26</a>   # Sample of regular route:</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line27">27</a>   #   match &#39;products/:id&#39; =&gt; &#39;catalog#view&#39;</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line28">28</a>   # Keep in mind you can assign values other than :controller and :action</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line29">29</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line30">30</a>   # Sample of named route:</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line31">31</a>   #   match &#39;products/:id/purchase&#39; =&gt; &#39;catalog#purchase&#39;, :as =&gt; :purchase</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line32">32</a>   # This route can be invoked with purchase_url(:id =&gt; product.id)</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line33">33</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line34">34</a>   # Sample resource route (maps HTTP verbs to controller actions automatically):</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line35">35</a>   #   resources :products</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line36">36</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line37">37</a>   # Sample resource route with options:</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line38">38</a>   #   resources :products do</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line39">39</a>   #     member do</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line40">40</a>   #       get :short</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line41">41</a>   #       post :toggle</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line42">42</a>   #     end</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line43">43</a>   #</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line44">44</a>   #     collection do</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line45">45</a>   #       get :sold</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line46">46</a>   #     end</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line47">47</a>   #   end</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line48">48</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line49">49</a>   # Sample resource route with sub-resources:</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line50">50</a>   #   resources :products do</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line51">51</a>   #     resources :comments, :sales</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line52">52</a>   #     resource :seller</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line53">53</a>   #   end</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line54">54</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line55">55</a>   # Sample resource route with more complex sub-resources</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line56">56</a>   #   resources :products do</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line57">57</a>   #     resources :comments</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line58">58</a>   #     resources :sales do</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line59">59</a>   #       get :recent, :on =&gt; :collection</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line60">60</a>   #     end</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line61">61</a>   #   end</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line62">62</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line63">63</a>   # Sample resource route within a namespace:</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line64">64</a>   #   namespace :admin do</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line65">65</a>   #     # Directs /admin/products/* to Admin::ProductsController</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line66">66</a>   #     # (app/controllers/admin/products_controller.rb)</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line67">67</a>   #     resources :products</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line68">68</a>   #   end</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line69">69</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line70">70</a>   # You can have the root of your site routed with &quot;root&quot;</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line71">71</a>   # just remember to delete public/index.html.</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line72">72</a>   # root :to =&gt; &quot;welcome#index&quot;</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line73">73</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line74">74</a>   # See how all your routes lay out with &quot;rake routes&quot;</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line75">75</a> </pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line76">76</a>   # This is a legacy wild controller route that&#39;s not recommended for RESTful applications.</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line77">77</a>   # Note: This route will make all actions in every controller accessible via GET requests.</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line78">78</a>   # match &#39;:controller(/:action(/:id(.:format)))&#39;</pre></td>
+        </tr>
+        <tr class="inferred">
+          <td><pre><a name="line79">79</a> end</pre></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>Generated on 2015-08-05 12:46:47 +0100 with <a href="https://github.com/fguillen/simplecov-rcov">SimpleCov-RCov 0.2.3</a></p>
+
+  </body>
+</html>
