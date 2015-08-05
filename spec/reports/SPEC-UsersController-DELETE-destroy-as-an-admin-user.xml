@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="UsersController DELETE 'destroy' as an admin user" tests="3" time="0.086174697" failures="0" errors="0" skipped="0" timestamp="2015-08-05T12:03:29+01:00">
-  <testcase name="UsersController DELETE 'destroy' as an admin user should destroy the user" time="0.026169917">
-  </testcase>
-  <testcase name="UsersController DELETE 'destroy' as an admin user should redirect to the users page" time="0.030743577">
-  </testcase>
-  <testcase name="UsersController DELETE 'destroy' as an admin user should not be able to destroy itself" time="0.028682548">
-  </testcase>
-</testsuite>

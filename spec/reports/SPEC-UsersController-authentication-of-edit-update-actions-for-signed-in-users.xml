@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="UsersController authentication of edit/update actions for signed-in users" tests="2" time="0.048624912" failures="0" errors="0" skipped="0" timestamp="2015-08-05T12:03:29+01:00">
-  <testcase name="UsersController authentication of edit/update actions for signed-in users should require matching users for 'edit'" time="0.023763572">
-  </testcase>
-  <testcase name="UsersController authentication of edit/update actions for signed-in users should require matching users for 'update'" time="0.024375738">
-  </testcase>
-</testsuite>

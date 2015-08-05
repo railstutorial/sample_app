@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="UsersController DELETE 'destroy' as a non-signed-in user" tests="1" time="0.021817724" failures="0" errors="0" skipped="0" timestamp="2015-08-05T12:03:29+01:00">
-  <testcase name="UsersController DELETE 'destroy' as a non-signed-in user should deny access" time="0.021462459">
-  </testcase>
-</testsuite>

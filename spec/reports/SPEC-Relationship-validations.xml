@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Relationship validations" tests="2" time="0.028457511" failures="0" errors="0" skipped="0" timestamp="2015-08-05T12:03:29+01:00">
-  <testcase name="Relationship validations should require a follower id" time="0.01374615">
-  </testcase>
-  <testcase name="Relationship validations should require a followed id" time="0.014144781">
-  </testcase>
-</testsuite>

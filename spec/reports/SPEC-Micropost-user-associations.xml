@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Micropost user associations" tests="2" time="0.034948821" failures="0" errors="0" skipped="0" timestamp="2015-08-05T12:03:29+01:00">
-  <testcase name="Micropost user associations should have a user attribute" time="0.022119869">
-  </testcase>
-  <testcase name="Micropost user associations should have the right associated user" time="0.012313076">
-  </testcase>
-</testsuite>

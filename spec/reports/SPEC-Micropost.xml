@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Micropost" tests="1" time="0.014515896" failures="0" errors="0" skipped="0" timestamp="2015-08-05T12:03:29+01:00">
-  <testcase name="Micropost should create a new instance with valid attributes" time="0.014213066">
-  </testcase>
-</testsuite>

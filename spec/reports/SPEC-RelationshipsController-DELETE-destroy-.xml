@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="RelationshipsController DELETE 'destroy'" tests="2" time="0.068555309" failures="0" errors="0" skipped="0" timestamp="2015-08-05T12:03:26+01:00">
-  <testcase name="RelationshipsController DELETE 'destroy' should destroy a relationship" time="0.030112413">
-  </testcase>
-  <testcase name="RelationshipsController DELETE 'destroy' should destroy a relationship with Ajax" time="0.037881743">
-  </testcase>
-</testsuite>

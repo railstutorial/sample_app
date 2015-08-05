@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="MicropostsController access control" tests="2" time="0.091368796" failures="0" errors="0" skipped="0" timestamp="2015-08-05T12:03:25+01:00">
-  <testcase name="MicropostsController access control should deny access to 'create'" time="0.077872538">
-  </testcase>
-  <testcase name="MicropostsController access control should deny access to 'destroy'" time="0.013040876">
-  </testcase>
-</testsuite>

@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="UsersController PUT 'update' success" tests="2" time="0.052673236" failures="0" errors="0" skipped="0" timestamp="2015-08-05T12:03:28+01:00">
-  <testcase name="UsersController PUT 'update' success should change the user's attributes" time="0.026120998">
-  </testcase>
-  <testcase name="UsersController PUT 'update' success should have a flash message" time="0.02599567">
-  </testcase>
-</testsuite>

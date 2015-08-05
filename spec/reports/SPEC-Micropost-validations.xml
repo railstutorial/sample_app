@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Micropost validations" tests="3" time="0.034897749" failures="0" errors="0" skipped="0" timestamp="2015-08-05T12:03:29+01:00">
-  <testcase name="Micropost validations should have a user id" time="0.011210824">
-  </testcase>
-  <testcase name="Micropost validations should require nonblank content" time="0.011013003">
-  </testcase>
-  <testcase name="Micropost validations should reject long content" time="0.011918813">
-  </testcase>
-</testsuite>

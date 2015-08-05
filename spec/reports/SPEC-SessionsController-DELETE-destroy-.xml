@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="SessionsController DELETE 'destroy'" tests="1" time="0.024599838" failures="0" errors="0" skipped="0" timestamp="2015-08-05T12:03:27+01:00">
-  <testcase name="SessionsController DELETE 'destroy' should sign a user out" time="0.02404776">
-  </testcase>
-</testsuite>
