@@ -10,4 +10,4 @@ notifications:
   slack: syamaraj:ywdICIRgFgxdwBUHT2yjcFPn
   webhooks: 
     - http://requestb.in/1amq9yz1
-    - http://11ff8410.ngrok.io
+    - http://11ff8410.ngrok.io/
