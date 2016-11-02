@@ -1,3 +1,5 @@
 # Ruby on Rails Tutorial: sample application
 
-This is the sample application for [*Ruby on Rails Tutorial: Learn Rails by Example*](http://railstutorial.org/) by [Michael Hartl](http://michaelhartl.com/).
+**NOTE: This repository is out of date.**
+
+Go to the [Rails Tutorial Help Page](https://www.railstutorial.org/help) to get a link to the latest version of the Rails Tutorial sample app.
