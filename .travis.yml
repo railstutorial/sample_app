@@ -1,0 +1,13 @@
+language: ruby
+rvm:
+ - "1.8.7"
+ - "1.9.2"
+ - "1.9.3"
+ - rbx
+# uncomment this line if your project needs to run something other than `rake`:
+# script: bundle exec rspec spec
+notifications:
+  slack: syamaraj:ywdICIRgFgxdwBUHT2yjcFPn
+  webhooks: 
+    - http://requestb.in/1amq9yz1
+    - http://11ff8410.ngrok.io/
