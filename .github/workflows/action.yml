@@ -12,11 +12,7 @@ jobs:
         sudo gem install brakeman -v 4.5.0
     - name: brakeman report
       run: |
-        brakeman -f json > brakeman.json || exit 0
-    - name: Brakeman
-      uses: devmasx/brakeman-linter-action@v1.0.0
-      env:
-        GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
-        REPORT_PATH: brakeman.json
+        brakeman 
+
 
     
