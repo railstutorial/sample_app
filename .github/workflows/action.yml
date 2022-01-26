@@ -1,4 +1,14 @@
 name: Brakeman
-  uses: devmasx/brakeman-linter-action@v1.0.0
-  env:
-    GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-18.04
+    steps:
+    - uses: actions/checkout@v1
+    - name: Brakeman
+      uses: devmasx/brakeman-linter-action@v1.0.0
+      env:
+        GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+        REPORT_PATH: tmp/brakeman.json
