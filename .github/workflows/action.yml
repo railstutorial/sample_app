@@ -7,9 +7,6 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
     - uses: actions/checkout@v1
-    - name: Install gems
-      run: |
-        gem install brakeman -v 4.5.0
     - name: brakeman report
       run: |
         brakeman -f json > tmp/brakeman.json || exit 0
