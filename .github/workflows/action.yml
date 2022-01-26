@@ -10,4 +10,4 @@ jobs:
     - name: Brakeman
       uses: devmasx/brakeman-linter-action@v1.0.0
       env:
-        GITHUB_TOKEN: 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
+        GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
