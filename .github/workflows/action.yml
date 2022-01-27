@@ -1,21 +1,22 @@
-name: reviewdog
+name: Brakeman
+
 on: [push]
+
 jobs:
-  brakeman:
-    name: runner / brakeman
-    runs-on: ubuntu-latest
+  build:
+    runs-on: ubuntu-18.04
     steps:
-      - name: Check out code
-        uses: actions/checkout@v1
-      - name: Set up Ruby
-        uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: 3.0.3
-      - name: brakeman
-        uses: reviewdog/action-brakeman@v2
-        with:
-          brakeman_version: 4.8.2
-          reporter: github-pr-review # Default is github-pr-check
+    - uses: actions/checkout@v1
+    - name: Install gems
+      run: |
+        sudo gem install brakeman -v 4.5.0
+    - name: brakeman report
+      run: |
+        brakeman || exit 0
+    - name: Brakeman action
+      # You may pin to the exact commit or the version.
+      # uses: artplan1/brakeman-action@164f2a414affc6358a78b19f530071975f353d17
+      uses: artplan1/brakeman-action@v1.2.1
 
 
     
