@@ -23,7 +23,8 @@ jobs:
       # You may pin to the exact commit or the version.
       # uses: reviewdog/action-brakeman@c44aa6464201980218955fe027a54060fea87c44
       uses: reviewdog/action-brakeman@v1
-        fail_on_error:true
+      with:
+        fail_on_error: true
 
 
     
