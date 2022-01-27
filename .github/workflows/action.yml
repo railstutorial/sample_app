@@ -15,9 +15,8 @@ jobs:
         brakeman -o results.sarif || exit 0
     - name: show
       run: |
-        tail results.sarif 
-    - name: Checkout repository
-      uses: actions/checkout@v2
+        cat results.sarif 
+
     - name: Upload SARIF file
       uses: github/codeql-action/upload-sarif@v1
       with:
