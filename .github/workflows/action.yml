@@ -7,23 +7,23 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
     - uses: actions/checkout@v1
-    #- name: Install gems
-      #run: |
-        #sudo gem install brakeman -v 4.5.0
-    #- name: brakeman report
-      #run: |
-        #brakeman || exit 0
+    - name: Install gems
+      run: |
+        sudo gem install brakeman -v 4.5.0
+    - name: brakeman 
+      run: |
+        brakeman || exit 0
     #- name: Brakeman action
       # You may pin to the exact commit or the version.
       # uses: artplan1/brakeman-action@164f2a414affc6358a78b19f530071975f353d17
       #uses: artplan1/brakeman-action@v1.2.1
       #with:
         #flags: "-I "
-    - name: Run brakeman with reviewdog
+    #- name: Run brakeman with reviewdog
       # You may pin to the exact commit or the version.
       # uses: reviewdog/action-brakeman@c44aa6464201980218955fe027a54060fea87c44
-      uses: reviewdog/action-brakeman@v1
-      with:
-        fail_on_error: true
+      #uses: reviewdog/action-brakeman@v1
+      #with:
+        #fail_on_error: true
 
 
