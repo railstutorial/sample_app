@@ -12,7 +12,12 @@ jobs:
         sudo gem install brakeman -v 4.5.0
     - name: brakeman 
       run: |
-        brakeman || exit 0
+        brakeman -o results.sarif || exit 0
+    - name: Upload SARIF file
+      uses: github/codeql-action/upload-sarif@v1
+      with:
+        # Path to SARIF file relative to the root of the repository
+        sarif_file: results.sarif
     #- name: Brakeman action
       # You may pin to the exact commit or the version.
       # uses: artplan1/brakeman-action@164f2a414affc6358a78b19f530071975f353d17
