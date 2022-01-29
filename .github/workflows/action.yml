@@ -21,6 +21,9 @@ jobs:
       with:
         # Path to SARIF file relative to the root of the repository
         sarif_file: results.sarif
+    - name: Clean
+      run : |
+        rm -rf results.sarif
         # Optional category for the results
         # Used to differentiate multiple results for one commit
         #category: my-analysis-tool
