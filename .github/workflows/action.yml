@@ -23,7 +23,7 @@ jobs:
         sarif_file: results.sarif
         # Optional category for the results
         # Used to differentiate multiple results for one commit
-        category: my-analysis-tool
+        #category: my-analysis-tool
     #- name: Brakeman action
       # You may pin to the exact commit or the version.
       # uses: artplan1/brakeman-action@164f2a414affc6358a78b19f530071975f353d17
