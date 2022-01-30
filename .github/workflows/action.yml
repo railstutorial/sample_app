@@ -4,10 +4,10 @@ on: [pull_request,push]
 
 jobs:
   build:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
-    - name: Install gems
+    - name: Install brakeman
       run: |
         sudo gem install brakeman -v 5.2.0
     - name: brakeman 
