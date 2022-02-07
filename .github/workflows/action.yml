@@ -27,16 +27,5 @@ jobs:
         # Optional category for the results
         # Used to differentiate multiple results for one commit
         #category: my-analysis-tool
-    #- name: Brakeman action
-      # You may pin to the exact commit or the version.
-      # uses: artplan1/brakeman-action@164f2a414affc6358a78b19f530071975f353d17
-      #uses: artplan1/brakeman-action@v1.2.1
-      #with:
-        #flags: "-I "
-    #- name: Run brakeman with reviewdog
-      # You may pin to the exact commit or the version.
-      # uses: reviewdog/action-brakeman@c44aa6464201980218955fe027a54060fea87c44
-      #uses: reviewdog/action-brakeman@v1
-      #with:
-        #fail_on_error: true
+
         
