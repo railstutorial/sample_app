@@ -1,0 +1,6 @@
+projectKey=allencharp_sample_app_AYNUV5nPh9Zjwx-d4uus
+serverUrl=http://54.186.86.26:9000
+serverVersion=9.5.0.56709
+dashboardUrl=http://54.186.86.26:9000/dashboard?id=allencharp_sample_app_AYNUV5nPh9Zjwx-d4uus
+ceTaskId=AYNUZ7aUh9Zjwx-d4uu6
+ceTaskUrl=http://54.186.86.26:9000/api/ce/task?id=AYNUZ7aUh9Zjwx-d4uu6
